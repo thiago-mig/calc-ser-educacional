@@ -43,11 +43,11 @@ selIES.addEventListener('change', (e) => {
 const calcularMedia = () => {
   if (selIES.value !== "UNIFAEL") {
     const media = (Number(nota1.value) + Number(nota2.value) + Number(nota3.value) + Number(nota4.value)) / 4;
-    const resultado = (media * 0.2).toFixed(1);
+    const resultado = (media * 0.2).toFixed(2);
     pResult.innerText = resultado;
   } else {
     const media = (Number(nota1.value) + Number(nota2.value) + Number(nota3.value)) / 3;
-    const resultado = ((media * 0.2) / 10).toFixed(1);
+    const resultado = ((media * 0.2) / 10).toFixed(2);
     pResult.innerText = resultado;
   }
 }
