@@ -10,14 +10,17 @@
 <body>
   <main>
     <form>
-      <label for='ies'>Selecione a IES</label>
+      <div class="container-selecao-ies">
+        <label for='ies'>Selecione a IES</label>
         <select name='ies' id='ies'>
           <option>UNINASSAU</option>
           <option>UNAMA</option>
           <option>UNIFAEL</option>
         </select>
-        <h1 class="title">Calcule sua média AV1</h1>
-        <fieldset class="container-fluid col-sm-4" >
+      </div>
+      <h1 class="title">Calcule sua média AV1</h1>
+      <div class="container-notas">
+        <fieldset>
           <legend>Insira suas notas AOL</legend>
           <div>
             <label for="nota-1">Avaliação On-Line 1 (AOL 1)</label>
@@ -27,19 +30,21 @@
             <label for="nota-2">Avaliação On-Line 2 (AOL 2)</label>
             <input type="number" id="nota-2" class="nota nota-2" placeholder="0.0">
           </div>
-          <div>
+          <div>  
             <label for="nota-3">Avaliação On-Line 3 (AOL 3)</label>
             <input type="number" id="nota-3" class="nota nota-3" placeholder="0.0">
           </div>
           <div>
             <label for="nota-4">Avaliação On-Line 4 (AOL 4)</label>
-            <input type="number" id="nota-4" class="nota nota-4" placeholder="0.0">
+            <input type="number" id="nota nota-4" class="nota-4" placeholder="0.0">
           </div>
-          <input type="button" value="Calcular"class="btn-calc">
+            <button value="Calcular"class="btn-calc">Calcular</button>
         </fieldset>
-        <div class="container-resposta">
-          <p class="resposta"> - - </p>
-        </div>
+          <div class="container-resposta">
+            <p class="resposta"> - - </p>
+          </div>
+      </div>
+      
       </form>
   </main>
 </body>
