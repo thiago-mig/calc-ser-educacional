@@ -15,7 +15,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   background-color: #E5E5E7;
   padding: 1rem;
 }
@@ -26,19 +26,19 @@ form {
   justify-content: center;
   align-items: center;
   width: 100%;
+  padding: 1rem;
 }
 
 div.container-selecao-ies {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 1rem;
-  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 label {
-  font-size: 1.2rem;
-  margin-right: 1rem;
+  font-size: clamp(1rem, 1.2rem, 1.5rem);
+  margin: 1rem;
 }
 
 select {
@@ -46,32 +46,38 @@ select {
   font-size: 1.2rem;
   border: 1px solid #000;
   border-radius: 10px;
-  margin-bottom: .5rem;
 }
 
 h1 {
   font-size: 2rem;
-  margin-bottom: 2rem;
+  text-align: center;
+  margin-bottom: 2.5rem;
 }
 
 .container-notas {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  height: 460px;
-  margin-bottom: 2rem;
   width: 80%;
 }
 
 fieldset {
   border-radius: 10px;
-  padding: 1.8rem;
-  margin-bottom: 2rem;
+  padding: 1.2rem;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  text-align: center;
   max-width: 500px;
+}
+
+.container-inputnota {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
 }
 
 input[type="number"] {
@@ -79,7 +85,7 @@ input[type="number"] {
   font-size: 1.5rem;
   border: 1px solid #000;
   border-radius: 10px;
-  margin-bottom: 2rem;
+  margin-bottom: .8rem;
   max-width: 5rem;
   text-align: center;
 }
@@ -87,24 +93,25 @@ input[type="number"] {
 button {
   padding: 1rem 2rem;
   font-size: 1.5rem;
-  border: none;
   border-radius: 10px;
   background-color: #01A8D9;
   color: #fff;
   cursor: pointer;
+  margin-top: 2rem;
 }
-  
+
 .container-resposta {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
 }
 
 .container-resposta p {
-    font-size: 6rem;
-    font-weight: bold;
-    color: #fff;
-    background-color: #312D44;
-    padding: 1rem 2rem;
-    border-radius: 10px;
+  font-size: 6rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #312D44;
+  padding: 1rem 2rem;
+  border-radius: 10px;
 }
