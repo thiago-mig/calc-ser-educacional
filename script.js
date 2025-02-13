@@ -36,7 +36,7 @@ selIES.addEventListener('change', (e) => {
   if(e.target.value === "UNIFAEL"){
     nota4.parentNode.style.display = 'none';
   }else{
-    nota4.parentNode.style.display = 'block';
+    nota4.parentNode.style.display = 'flex';
   }
 });
 
@@ -67,7 +67,3 @@ window.onload = () => {
 const consologar = (variavel) => {
   log.innerHTML = variavel;
 }
-
-
-
-
