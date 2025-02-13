@@ -15,7 +15,7 @@ const clear = () => {
   nota2.value = '';
   nota3.value = '';
   nota4.value = '';
-  pResult.innerText = '';
+  pResult.innerText = '- -';
 }
 
 const validate = (e) => {
@@ -56,7 +56,10 @@ gradeFields.forEach((field) => {
   field.addEventListener('focusout', validate);
 });
 
-btnCalcular.addEventListener('click', calcularMedia);
+btnCalcular.addEventListener('click', (e) => {
+  e.preventDefault();
+  calcularMedia();
+});
 window.onload = () => {
   title.innerText = `Calcule sua média AV1 - ${selIES.value}`;
 }
